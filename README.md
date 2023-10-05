@@ -6,7 +6,7 @@ Contains everything to setup my developer environment.
 
 ## How does this work?
 
-[Boxstarter](https://boxstarter.org/) is used to avoid interruptions during installation and to launch the installation directly from an [URL](https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/TechWatching/dotfiles/features/initialization/boxstarter.ps1) without manually downloading any software before. 
+[Boxstarter](https://boxstarter.org/) is used to avoid interruptions during installation and to launch the installation directly from an [URL](https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/alantsai/devsetup/main/boxstarter.ps1) without manually downloading any software before. 
 
 The setup is automated using [PowerShell](https://docs.microsoft.com/en-us/powershell/) scripts.
 
@@ -37,7 +37,7 @@ This repository contains the tools I like to use, my config files, my preference
 
 Only a click on the **Install** link below is needed to kaunch the installation. Please make sure you have updated the link with the corresponding path on your fork.
 
-[Install](https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/TechWatching/dotfiles/features/initialization/boxstarter.ps1)
+[Install](https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/alantsai/devsetup/main/boxstarter.ps1)
 
 ## Disclaimer
 
