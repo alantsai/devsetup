@@ -25,6 +25,7 @@ Set-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\AppModelU
 . "$env:USERPROFILE\devsetup\scripts\RemoveDefaultApps.ps1"
 . "$env:USERPROFILE\devsetup\scripts\Tools.ps1"
 . "$env:USERPROFILE\devsetup\scripts\IDEs.ps1"
+# . "$env:USERPROFILE\devsetup\scripts\Prompt.ps1"
 
 # TODO: install WSL2 / Ubuntu
 # choco install -y Microsoft-Windows-Subsystem-Linux -source windowsfeatures
