@@ -10,6 +10,7 @@ git clone https://github.com/alantsai/devsetup.git "$env:USERPROFILE\devsetup"
 # Git configuration
 Remove-Item -Path "$env:USERPROFILE\.gitconfig" -Force
 New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gitconfig" -Target "$env:USERPROFILE\devsetup\config\git\.gitconfig"
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gitignore_global" -Target "$env:USERPROFILE\devsetup\config\git\.gitignore_global"
 # TODO: configure git signature
 
 # Winget configuration

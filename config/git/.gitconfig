@@ -1,35 +1,24 @@
 [user]
-	name = Alexandre Nedelec
-[fetch]
-	prune = true
-[pull]
-	rebase = true
-[rebase]
-	autoStash = true
-	autosquash = true
-[diff]
-  tool = vscode
-[difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
+	name = Alan Tsai
+	email = alan@alantsai.net
+[color]
+	ui = true
 [core]
-	editor = code --wait
+	excludesfile = ~/.gitignore_global
+	editor = 'C:\\tools\\vim\\vim82\\gvim.exe' -f -i NONE
 	autocrlf = true
-[remote "origin"]
-	fetch = +refs/pull/*/merge:refs/remotes/origin/pr/*
-[winUpdater]
-	recentlySeenVersion = 2.40.1.windows.1
-[credential]
-	helper = manager
+	quotepath = false
+
 [alias]
+	hist = log --format=\"[%h] %ad | %s%d [%an]\" --graph --date=short
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	pf = push origin --force-with-lease
 	new = lg main..HEAD
 	missing = lg HEAD..main
-[push]
-	autoSetupRemote = true
-[submodule]
-	recurse = true
-[init]
-	defaultBranch = main
+[credential]
+	helper = cache
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
