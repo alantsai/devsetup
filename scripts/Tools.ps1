@@ -11,7 +11,7 @@ choco install -y 7zip
 choco install -y paint.net
 # choco install -y screentogif
 choco install -y zoomit
-winget install -e -h --id WinDirStat.WinDirStat
+# winget install -e -h --id WinDirStat.WinDirStat
 # winget install -e -h --id Microsoft.BingWallpaper
 # winget install -e -h --id Obsidian.Obsidian
 winget install -e -h --id JohnMacFarlane.Pandoc
@@ -34,9 +34,16 @@ winget install -e -h --id CoreyButler.NVMforWindows
 
 choco install winmerge
 choco install tortoisegit
+
+Enable-WindowsOptionalFeature -Online -FeatureName containers -All
+RefreshEnv
+choco install -y docker-for-windows
 winget install Docker.DockerDesktop
 
 winget install Canonical.Ubuntu.2204
+
+winget install Microsoft.AzureDataStudio
+winget install Microsoft.SQLServerManagementStudio
 
 
 # ---------------------------------------------- #
